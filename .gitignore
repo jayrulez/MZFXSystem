@@ -1,0 +1,6 @@
+.vs
+.vs/**
+.vscode/**
+.idea/**
+**/bin/*
+**/obj/*
