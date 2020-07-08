@@ -18,7 +18,7 @@ namespace MZ.FXSystem.Services.FX
 
         public override string ToString()
         {
-            return $"{Amount} {SourceCurrencyCode} = {Math.Round(Value, 4)} {TargetCurrencyCode} using Exchange Rate = {ExchangeRate} on date '{Date}'.";
+            return $"{SourceCurrencyCode} {Amount}={TargetCurrencyCode} {Math.Round(Value, 4)} using Exchange Rate 1 {SourceCurrencyCode}={ExchangeRate} {TargetCurrencyCode} on date '{Date}'.";
         }
     }
 }
