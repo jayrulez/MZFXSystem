@@ -1,9 +1,9 @@
-﻿using MarshalZehr.FXSystem.Services.FX;
-using MarshalZehr.FXSystem.Services.FX.Backends.BankOfCanada;
+﻿using MZ.FXSystem.Services.FX;
+using MZ.FXSystem.Services.FX.Backends.BankOfCanada;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 
-namespace MarshalZehr.FXSystem
+namespace MZ.FXSystem
 {
     class Program
     {

@@ -1,7 +1,10 @@
 ﻿using Newtonsoft.Json;
 
-namespace MarshalZehr.FXSystem.Services.FX.Backends.BankOfCanada
+namespace MZ.FXSystem.Services.FX.Backends.BankOfCanada
 {
+    /// <summary>
+    /// Mapping for error responses from the Bank of Canada Valet API
+    /// </summary>
     public class ErrorResponseModel
     {
         [JsonProperty("message")]

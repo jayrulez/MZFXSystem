@@ -1,7 +1,10 @@
 ﻿using System;
 
-namespace MarshalZehr.FXSystem.Services.FX
+namespace MZ.FXSystem.Services.FX
 {
+    /// <summary>
+    /// Represents the result of a conversion between two currencies
+    /// </summary>
     public class FXConversion
     {
         public string SourceCurrencyCode { get; set; }

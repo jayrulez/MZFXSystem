@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MarshalZehr.FXSystem.Services.FX
+namespace MZ.FXSystem.Services.FX
 {
     public class FXServiceException : Exception
     {

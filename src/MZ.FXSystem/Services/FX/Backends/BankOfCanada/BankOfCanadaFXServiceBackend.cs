@@ -8,8 +8,11 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace MarshalZehr.FXSystem.Services.FX.Backends.BankOfCanada
+namespace MZ.FXSystem.Services.FX.Backends.BankOfCanada
 {
+    /// <summary>
+    /// Bank of Canada FX Backend implementation
+    /// </summary>
     public class BankOfCanadaFXServiceBackend : IFXServiceBackend
     {
         private readonly HttpClient _httpClient;
@@ -70,12 +73,12 @@ namespace MarshalZehr.FXSystem.Services.FX.Backends.BankOfCanada
 
             if (response.IsSuccessStatusCode)
             {
-                var fxRecords = new List<FXRecord>();
-
                 var seriesData = JsonConvert.DeserializeObject<SeriesDataModel>(content);
 
                 // The source data does not map neatly to a convenient .NET object 
                 // So let us map them to a list of [FXRecord]s
+                var fxRecords = new List<FXRecord>();
+
                 foreach (var obversation in seriesData.Observations)
                 {
                     var fxRecord = new FXRecord()

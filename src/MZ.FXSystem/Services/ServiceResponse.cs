@@ -1,4 +1,4 @@
-﻿namespace MarshalZehr.FXSystem.Services
+﻿namespace MZ.FXSystem.Services
 {
     /// <summary>
     /// Wraps an error code an associated error message in a standard format.

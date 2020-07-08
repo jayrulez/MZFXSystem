@@ -1,8 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace MarshalZehr.FXSystem.Services.FX.Backends.BankOfCanada
+namespace MZ.FXSystem.Services.FX.Backends.BankOfCanada
 {
+    /// <summary>
+    /// Model representing the source data
+    /// </summary>
     public class SeriesDataModel
     {
         public SeriesDataModel()
